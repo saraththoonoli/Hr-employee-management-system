@@ -3,7 +3,18 @@
     <h2>Edit Employee</h2>
     <hr>
     <form class="form " (ngSubmit)="updateEmployee()">
-      <!-- Editable fields, adjust as needed -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="text" id="password" name="password" class="form-control" [(ngModel)]="employee.password" required />
+      </div>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" id="username" name="username" class="form-control" [(ngModel)]="employee.username" required />
+      </div>
+      <div class="mb-3">
+        <label for="designation" class="form-label">Designation:</label>
+        <input type="text" id="designation" name="designation" class="form-control" [(ngModel)]="employee.designation" required />
+      </div>
       <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
         <input type="text" id="name" name="name" class="form-control" [(ngModel)]="employee.name" required />

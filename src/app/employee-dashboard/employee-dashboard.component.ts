@@ -1,6 +1,6 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { EmployeeService } from '../employee.service';
 import { OnlineStatusService } from '../online-status.service';
@@ -15,6 +15,7 @@ export class EmployeeDashboardComponent implements OnInit {
   loggedInEmployeeId: string | null;
   loggedInEmployee: any;
   isOnline: boolean = true; 
+  @Input() bg:string=''
 
   constructor(
     private authService: AuthService,

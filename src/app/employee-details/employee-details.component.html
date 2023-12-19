@@ -10,6 +10,7 @@
         <tr>
           <th>ID</th>
           <th>Name</th>
+          <th>Role</th>
           <th class="d-none d-md-table-cell">Age</th>
           <th class="d-none d-md-table-cell">DOB</th>
           <th class="d-none d-md-table-cell">Image</th>
@@ -26,6 +27,7 @@
         <tr *ngFor="let employee of employees">
           <td>{{ employee.id }}</td>
           <td>{{ employee.name }}</td>
+          <td>{{ employee.designation }}</td>
           <td class="d-none d-md-table-cell">{{ employee.age }}</td>
           <td class="d-none d-md-table-cell">{{ employee.dob }}</td>
           <td class="d-none d-md-table-cell"><img [src]="employee.image" alt="Employee Image" width="70" height="50" /></td>

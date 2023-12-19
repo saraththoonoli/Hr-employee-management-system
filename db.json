@@ -13,7 +13,8 @@
       "bloodGroup": "O+",
       "gender": "male",
       "leaveDetails": "5 leave taken",
-      "online": true
+      "online": true,
+      "designation": "Backend "
     },
     {
       "name": "sharath.t",
@@ -29,7 +30,8 @@
       "password": "sarath",
       "id": 3,
       "status": "inactive",
-      "online": false
+      "online": false,
+      "designation": "software engineer"
     },
     {
       "name": "shamal.m",
@@ -165,6 +167,21 @@
       "username": "kripa",
       "password": "kripa",
       "id": 12
+    },
+    {
+      "name": "karthi",
+      "email": "karthi@gmail.com",
+      "phone": 9854523698,
+      "age": 52,
+      "dob": "1880-12-12",
+      "image": "hhh",
+      "bloodGroup": "AB+ve",
+      "gender": "female",
+      "leaveDetails": "",
+      "designation": "Sales",
+      "username": "karthika",
+      "password": "karthika",
+      "id": 13
     }
   ],
   "leaveRequests": [

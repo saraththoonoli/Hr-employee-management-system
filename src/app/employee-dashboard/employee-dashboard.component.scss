@@ -4,8 +4,8 @@
 
 #sidebar {
   width: 250px;
-  background-color: #ca4040;
-  color: #fff;
+  background-color: rgb(43, 43, 108);
+  color: #fff;  
   padding: 20px;
   height: 100vh;
 }
@@ -24,6 +24,13 @@
   margin-bottom: 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  p{
+    text-align: center;
+  }
+}
+#designation{
+  color: white;
+  font-size: 25px;
 }
 
 
@@ -31,7 +38,7 @@
   background-color: #555;
 }
 span{
-  color: red;
+  color: rgb(138, 138, 228);
   font-size: 35px;
   font-weight: 600;
 }
@@ -40,7 +47,7 @@ img{
 }
 h4{
   font-size: 25px;
-  color: black;
+  color: #fff;
   font-weight: 500;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -58,4 +65,17 @@ h4{
 }
 .button-1,.button-2{
   border: none;
+}
+
+.bg{
+  background-color: red;
+}
+
+/* Adjustments for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 600px) {
+  #sidebar {
+    width: 100%; /* Make the sidebar full width */
+  }
+
+  /* Add any additional styling for smaller screens as needed */
 }
