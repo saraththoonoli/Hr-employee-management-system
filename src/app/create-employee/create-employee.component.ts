@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { EmployeeService } from '../employee.service';
 import Swal from 'sweetalert2';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-create-employee',
   templateUrl: './create-employee.component.html',
@@ -18,9 +19,10 @@ export class CreateEmployeeComponent {
     image: '',
     bloodGroup: '',
     gender: '',
-    leaveDetails: ''
+    leaveDetails: '',
+    designation :''
   };
-  constructor(private employeeService: EmployeeService , private location: Location) {}
+  constructor(private employeeService: EmployeeService , private location: Location,private router:Router) {}
   // onsubmit 
   onSubmit(): void {
     this.employeeService.addEmployee(this.employee).subscribe(
@@ -31,7 +33,7 @@ export class CreateEmployeeComponent {
           icon: 'success',
         });
         console.log('Employee added successfully.');
-        // Optionally, navigate to the employee list or perform other actions
+        this.router.navigate(['/employee-details']);
       },
       (error) => {
         Swal.fire({

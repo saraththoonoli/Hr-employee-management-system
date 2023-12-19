@@ -1,7 +1,9 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
-import { HttpClient } from '@angular/common/http';
 import { EmployeeService } from '../employee.service';
+import { OnlineStatusService } from '../online-status.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,12 +14,12 @@ import { Router } from '@angular/router';
 export class EmployeeDashboardComponent implements OnInit {
   loggedInEmployeeId: string | null;
   loggedInEmployee: any;
-  
 
   constructor(
     private authService: AuthService,
     private employeeService: EmployeeService,
-    private router:Router
+    private onlineStatusService: OnlineStatusService,
+    private router: Router
   ) {
     this.loggedInEmployeeId = this.authService.getLoggedInEmployeeId();
   }
@@ -36,9 +38,27 @@ export class EmployeeDashboardComponent implements OnInit {
     }
   }
 
-  logout(){
+  markOnline(): void {
+    this.saveOnlineStatus(true);
+  }
+
+  markOffline(): void {
+    this.saveOnlineStatus(false);
+  }
+
+  private saveOnlineStatus(online: boolean): void {
+    if (this.loggedInEmployeeId) {
+      this.onlineStatusService
+        .updateOnlineStatus(+this.loggedInEmployeeId, online)
+        .subscribe(() => {
+          // Reload employee details after updating status
+          this.loadLoggedInEmployeeDetails();
+        });
+    }
+  }
+
+  logout(): void {
     this.authService.logout();
     this.router.navigate(['/login']);
   }
-  
 }

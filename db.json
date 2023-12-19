@@ -4,15 +4,16 @@
       "id": 1,
       "username": "employee1",
       "password": "employee1password",
-      "name": "Employee One",
+      "name": "EmployeeOne",
       "email": "employee1@example.com",
       "phone": "1234567890",
       "age": 30,
       "dob": "1992-01-01",
-      "image": "https://example.com/employee1.jpg",
+      "image": "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
       "bloodGroup": "O+",
       "gender": "male",
-      "leaveDetails": "5 leave taken"
+      "leaveDetails": "5 leave taken",
+      "online": true
     },
     {
       "name": "sharath.s",
@@ -27,21 +28,23 @@
       "username": "saraththoonoli",
       "password": "sarath",
       "id": 3,
-      "status": "inactive"
+      "status": "inactive",
+      "online": true
     },
     {
-      "name": "shamal",
+      "name": "shamal.m",
       "email": "shamal@gmail.com",
       "phone": "5215687598",
       "age": 22,
       "dob": "2000-10-12",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAAqmurFvPdiEBK824gg5B_CD1nIgXnClXCA&usqp=CAU",
       "bloodGroup": "A+ve",
       "gender": "male",
       "leaveDetails": "",
       "username": "shamal",
       "password": "shamal",
-      "id": 4
+      "id": 4,
+      "online": false
     }
   ],
   "leaveRequests": [

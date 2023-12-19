@@ -1,27 +1,28 @@
+<!-- employee-dashboard.component.html -->
 
-  <mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>
-      <div id="sidebar" class="ps-4">
-        <img class="ms-4" [src]="loggedInEmployee.image" alt="Employee Image" width="120" height="120" />
-        <h4 class="ms-3 pt-3">{{ loggedInEmployee.name |uppercase }}</h4>
-        <hr>
-        <a href="emp-details">Details page</a>
-        <hr>
-        <a href="leave-req">Leave application page</a>
-        <hr>
-        <a type="button" (click)="logout()"><i class="fa-solid fa-arrow-left fa-xl" style="color: #ffffff;"></i>&nbsp;Logout</a>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <div id="sidebar" class="ps-4">
+      <img class="ms-3" [src]="loggedInEmployee.image" alt="Employee Image" width="120" height="120" />
+      <h4 class="ms-3 pt-3">{{ loggedInEmployee.name | uppercase }}</h4>
+      <hr>
+      <a href="emp-details">Details page</a>
+      <hr>
+      <a href="leave-req">Leave application page</a>
+      <hr>
+      <p>Set status </p>
+      <button class="btn-1" type="button" (click)="markOnline()">Mark Online</button> &nbsp;
+      <button class="btn-2" type="button" (click)="markOffline()">Mark Offline</button>
+      <hr>
+      <a type="button" (click)="logout()"><i class="fa-solid fa-arrow-left fa-xl" style="color: #ffffff;"></i>&nbsp;Logout</a>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div id="dashboard">
+      <div *ngIf="loggedInEmployee">
+        <h1>Welcome, <span>{{ loggedInEmployee.name | uppercase }}</span></h1>
+        <p>This is your dashboard</p>
       </div>
-    </mat-drawer>
-    <mat-drawer-content>
-      <div id="dashboard">
-        <div *ngIf="loggedInEmployee">
-          <h1>Welcome, <span>{{ loggedInEmployee.name | uppercase }}</span></h1>
-          <p>This is your dashboard</p>
-          
-          
-        </div>
-        
-  
-      </div>
-    </mat-drawer-content>
-  </mat-drawer-container>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
