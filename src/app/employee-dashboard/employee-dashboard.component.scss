@@ -1,0 +1,39 @@
+#container {
+    display: flex;
+  }
+
+  #sidebar {
+    width: 250px;
+    background-color: #d9c7c7;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  #dashboard {
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* Style the menu links */
+  #sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+
+  #sidebar a:hover {
+    background-color: #555;
+  }
+  span{
+    color: red;
+    text-transform: uppercase;
+  }
+  img{
+    border-radius: 100%;
+  }
