@@ -1,9 +1,9 @@
-<div>
-  <a class="btn btn-secondary ms-5 me-5 mt-3" (click)="goBack()">Back</a>
-</div>
-<div class="container mt-5">
+<a class="btn ms-5 me-5 mt-3" (click)="goBack()"><i class="fa-solid fa-2xl fa-circle-left" style="color: #000000;"></i></a>
+
+<div class="container mt-1">
     <h2>Edit Employee</h2>
-    <form (ngSubmit)="updateEmployee()">
+    <hr>
+    <form class="form" (ngSubmit)="updateEmployee()">
       <!-- Editable fields, adjust as needed -->
       <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
@@ -11,17 +11,17 @@
       </div>
 
       <div class="mb-3">
-        <label for="email" class="form-label">Age:</label>
+        <label for="email" class="form-label">Email:</label>
         <input type="email" id="email" name="email" class="form-control" [(ngModel)]="employee.email" required />
       </div>
 
       <div class="mb-3">
-        <label for="phone" class="form-label">Age:</label>
+        <label for="phone" class="form-label">Phone:</label>
         <input type="phone" id="phone" name="phone" class="form-control" [(ngModel)]="employee.phone" required />
       </div>
 
       <div class="mb-3">
-        <label for="image" class="form-label">Age:</label>
+        <label for="image" class="form-label">Image:</label>
         <input type="text" id="image" name="image" class="form-control" [(ngModel)]="employee.image" required />
       </div>
 
@@ -43,7 +43,7 @@
         </select>
       </div>
       <div class="mb-3">
-        <label for="leaveDetails" class="form-label">leaveDetails:</label>
+        <label for="leaveDetails" class="form-label">LeaveDetails:</label>
         <input type="text" id="age" name="leaveDetails" class="form-control" [(ngModel)]="employee.leaveDetails" required />
       </div>
       

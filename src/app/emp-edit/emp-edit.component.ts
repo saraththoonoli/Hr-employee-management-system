@@ -64,6 +64,6 @@ export class EmpEditComponent {
     }
   }
   goBack(): void {
-    this.router.navigate(['/employee-dashboard']); // Adjust the route accordingly
+    this.router.navigate(['/emp-details']); // Adjust the route accordingly
   }
 }

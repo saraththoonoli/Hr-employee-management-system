@@ -29,7 +29,7 @@
       "password": "sarath",
       "id": 3,
       "status": "inactive",
-      "online": true
+      "online": false
     },
     {
       "name": "shamal.m",
@@ -152,20 +152,19 @@
       "id": 11
     },
     {
-      "name": "d",
-      "email": "sa@gmail.com",
-      "phone": 8521569874,
-      "age": 55,
-      "dob": "1985-12-12",
-      "image": "jj",
-      "bloodGroup": "A-ve",
+      "name": "kripa.t",
+      "email": "kripa@gmail.com",
+      "phone": 5215896324,
+      "age": 38,
+      "dob": "1988-11-12",
+      "image": "ggg",
+      "bloodGroup": "AB+ve",
       "gender": "female",
       "leaveDetails": "",
-      "designation": "fsgsg",
-      "username": "d",
-      "password": "d",
-      "id": 12,
-      "online": false
+      "designation": "engineer",
+      "username": "kripa",
+      "password": "kripa",
+      "id": 12
     }
   ],
   "leaveRequests": [
@@ -287,21 +286,11 @@
       "id": 28
     },
     {
-      "employeeId": "3",
-      "startDate": "2023-12-22",
-      "endDate": "2023-12-25",
-      "reason": "lj",
-      "leaveType": "vacation",
-      "status": "pending",
+      "status": "approved",
       "id": 29
     },
     {
-      "employeeId": "9",
-      "startDate": "2023-12-21",
-      "endDate": "2023-12-22",
-      "reason": "njsjs",
-      "leaveType": "vacation",
-      "status": "pending",
+      "status": "rejected",
       "id": 30
     }
   ],
