@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class EmployeeDashboardComponent implements OnInit {
   loggedInEmployeeId: string | null;
   loggedInEmployee: any;
+  isOnline: boolean = true; 
 
   constructor(
     private authService: AuthService,
@@ -39,10 +40,12 @@ export class EmployeeDashboardComponent implements OnInit {
   }
 
   markOnline(): void {
+    this.isOnline = true;
     this.saveOnlineStatus(true);
   }
 
   markOffline(): void {
+    this.isOnline = false;
     this.saveOnlineStatus(false);
   }
 

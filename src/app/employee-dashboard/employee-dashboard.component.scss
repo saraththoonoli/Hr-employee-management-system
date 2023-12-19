@@ -51,11 +51,11 @@ h4{
   margin: 0px;
   border: 5px solid #ffff;
 }
-.btn-1{
-  background-color: green;
-  border: none;
+
+.active {
+  background-color: green; /* or any color you prefer */
+  color: white;
 }
-.btn-2{
-  background-color: red;
+.button-1,.button-2{
   border: none;
 }
