@@ -1,8 +1,10 @@
-<a class="btn btn-secondary ms-5 me-5 mt-3" (click)="goBack()">Back</a>
+<a class="btn btn-secondary ms-3 me-3 mt-3" (click)="goBack()">Back</a>
+
 <div class="container mt-5">
-  <h2>All Employee Details</h2>
+  <h2 class="text-center mb-4">All Employee Details</h2>
+
   <div class="table-responsive">
-    <table class="table table-bordered">
+    <table class="table table-striped ">
       <thead class="thead-dark">
         <tr>
           <th>ID</th>
@@ -32,8 +34,10 @@
           <td class="d-none d-md-table-cell">{{ employee.leaveDetails }}</td>
 
           <td>
-            <button routerLink="edit/{{ employee.id }}" class="btn btn-primary" (click)="editEmployee(employee.id)">Edit</button> &nbsp;
-            <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button routerLink="edit/{{ employee.id }}" class="btn btn-primary me-md-2 mb-2 mb-md-0">Edit</button>
+              <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button>
+            </div>
           </td>
         </tr>
       </tbody>

@@ -3,7 +3,7 @@
 <div class="container">
   <h2>Add Employee</h2>
   <hr class="mb-4">
-  <form class="form form-control mt-2" (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+  <form class="form  mt-2" (ngSubmit)="onSubmit()" #employeeForm="ngForm">
     <div class="mb-3">
       <label for="username" class="form-label">username:</label>
       <input type="text" id="username" name="username" class="form-control" [(ngModel)]="employee.username" required />

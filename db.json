@@ -42,20 +42,6 @@
       "username": "shamal",
       "password": "shamal",
       "id": 4
-    },
-    {
-      "name": "dulquer",
-      "email": "dulquer@gmail.com",
-      "phone": "1234567892",
-      "age": 20,
-      "dob": "2003-03-21",
-      "image": "",
-      "bloodGroup": "o+ve",
-      "gender": "male",
-      "leaveDetails": "",
-      "username": "dq",
-      "password": "dq123",
-      "id": 5
     }
   ],
   "leaveRequests": [
