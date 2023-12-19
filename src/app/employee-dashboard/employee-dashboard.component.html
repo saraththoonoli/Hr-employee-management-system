@@ -11,8 +11,9 @@
       <a href="leave-req">Leave application page</a>
       <hr>
       <p>Set status </p>
-      <button class="btn-1" type="button" (click)="markOnline()">Mark Online</button> &nbsp;
-      <button class="btn-2" type="button" (click)="markOffline()">Mark Offline</button>
+      <button class="btn-1" type="button" (click)="markOnline()" [ngClass]="{'active': isOnline}">Mark Online</button> &nbsp;
+      <button class="btn-2" type="button" (click)="markOffline()" [ngClass]="{'active': !isOnline}">Mark Offline</button>
+      
       <hr>
       <a type="button" (click)="logout()"><i class="fa-solid fa-arrow-left fa-xl" style="color: #ffffff;"></i>&nbsp;Logout</a>
     </div>
