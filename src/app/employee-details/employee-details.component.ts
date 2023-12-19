@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './employee-details.component.html',
   styleUrls: ['./employee-details.component.scss']
 })
-export class EmployeeDetailsComponent implements OnInit{
+export class EmployeeDetailsComponent implements OnInit {
 
   employees: any[] = [];
   location: any;
@@ -55,8 +55,10 @@ export class EmployeeDetailsComponent implements OnInit{
         }
       );
     }
-    
   }
 
+  // Back function
+  goBack(): void {
+    this.router.navigate(['/hr-dashboard']); // Adjust the route accordingly
   }
-
+}

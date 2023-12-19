@@ -1,8 +1,9 @@
 <!-- create-employee.component.html -->
-<button class="btn btn-secondary mb-3 mt-3 ms-3" (click)="goBack()">Back</button>
+<a class="btn btn-secondary ms-5 me-5 mt-3" (click)="goBack()">Back</a>
 <div class="container">
   <h2>Add Employee</h2>
-  <form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+  <hr class="mb-4">
+  <form class="form form-control mt-2" (ngSubmit)="onSubmit()" #employeeForm="ngForm">
     <div class="mb-3">
       <label for="username" class="form-label">username:</label>
       <input type="text" id="username" name="username" class="form-control" [(ngModel)]="employee.username" required />
@@ -21,7 +22,7 @@
     </div>
     <div class="mb-3">
       <label for="phone" class="form-label">Phone:</label>
-      <input type="tel" id="phone" name="phone" class="form-control" [(ngModel)]="employee.phone" required pattern="[0-9]{10}" />
+      <input type="number" id="phone" name="phone" class="form-control" [(ngModel)]="employee.phone" required pattern="[0-9]{10}" />
     </div>
     <div class="mb-3">
       <label for="age" class="form-label">Age:</label>

@@ -20,9 +20,8 @@ export class CreateEmployeeComponent {
     gender: '',
     leaveDetails: ''
   };
-
   constructor(private employeeService: EmployeeService , private location: Location) {}
-
+  // onsubmit 
   onSubmit(): void {
     this.employeeService.addEmployee(this.employee).subscribe(
       () => {
@@ -44,6 +43,8 @@ export class CreateEmployeeComponent {
       }
     );
   }
+
+  // back page navigation
 
   goBack(): void {
     this.location.back();

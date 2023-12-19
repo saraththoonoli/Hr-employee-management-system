@@ -50,6 +50,7 @@ export class EditEmployeeComponent implements OnInit {
             text: 'Employee details updated successfully.',
             icon: 'success',
           });
+          this.router.navigate(['/employee-details']);
         },
         (error) => {
           Swal.fire({
@@ -58,9 +59,9 @@ export class EditEmployeeComponent implements OnInit {
             icon: 'error',
           });
         }
-      );
+      );  
   }
-  
+ 
 
   goBack(): void {
     this.location.back();

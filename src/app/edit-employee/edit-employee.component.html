@@ -1,7 +1,7 @@
 <button class="btn btn-secondary mb-3 mt-3 ms-3" (click)="goBack()">Back</button>
 <div class="container">
     <h2>Edit Employee</h2>
-    <form (ngSubmit)="updateEmployee()">
+    <form class="form form-control" (ngSubmit)="updateEmployee()">
       <!-- Editable fields, adjust as needed -->
       <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
@@ -45,7 +45,7 @@
         <input type="text" id="leaveDetails" name="leaveDetails" class="form-control" [(ngModel)]="employee.leaveDetails" required />
       </div>
       <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Update Employee</button>
+        <button (click)="updateEmployee()" type="submit" class="btn btn-primary">Update Employee</button>
       </div>
     </form>
   </div>

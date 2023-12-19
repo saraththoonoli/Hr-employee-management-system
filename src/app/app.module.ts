@@ -21,6 +21,10 @@ import { EmpEditComponent } from './emp-edit/emp-edit.component';
 import { HrLeaveComponent } from './hr-leave/hr-leave.component';
 import { FooterComponent } from './footer/footer.component';
 import { WilsCardComponent } from './wils-card/wils-card.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+
+
 
 
 @NgModule({
@@ -48,7 +52,9 @@ import { WilsCardComponent } from './wils-card/wils-card.component';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSidenavModule,
+    MatButtonModule
     
     
   ],
