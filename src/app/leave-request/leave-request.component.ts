@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { LeaveService } from '../leave.service';
 import { AuthService } from '../auth.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-leave-request',
@@ -19,7 +20,8 @@ export class LeaveRequestComponent implements OnInit {
   constructor(
     private leaveService: LeaveService,
     private authService: AuthService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router:Router
   ) {
     this.leaveForm = this.fb.group({
       startDate: ['', Validators.required],
@@ -74,6 +76,10 @@ export class LeaveRequestComponent implements OnInit {
         // Handle error (e.g., show an alert to the user)
       }
     );
+  }
+
+  goBack(): void {
+    this.router.navigate(['/employee-dashboard']); // Adjust the route accordingly
   }
 }
   

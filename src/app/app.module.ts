@@ -23,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WilsCardComponent } from './wils-card/wils-card.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 
 
 
@@ -44,7 +45,8 @@ import {MatButtonModule} from '@angular/material/button';
     EmpEditComponent,
     HrLeaveComponent,
     FooterComponent,
-    WilsCardComponent
+    WilsCardComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,

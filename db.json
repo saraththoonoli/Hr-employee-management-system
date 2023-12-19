@@ -142,31 +142,34 @@
       "id": 24
     },
     {
-      "employeeId": "3",
-      "startDate": "2023-02-12",
-      "endDate": "2023-02-18",
-      "reason": "wjdnlemd",
-      "leaveType": "vacation",
-      "status": "pending",
+      "status": "rejected",
       "id": 25
     },
     {
-      "employeeId": "4",
-      "startDate": "2023-12-21",
-      "endDate": "2023-12-28",
-      "reason": "jhb1hj",
-      "leaveType": "personal",
-      "status": "pending",
+      "status": "rejected",
       "id": 26
     },
     {
+      "status": "rejected",
+      "id": 27
+    },
+    {
       "employeeId": "3",
-      "startDate": "2023-12-23",
-      "endDate": "2023-12-25",
-      "reason": "jhbjkb",
+      "startDate": "2023-12-22",
+      "endDate": "2023-12-21",
+      "reason": "mnbjhk",
       "leaveType": "vacation",
       "status": "pending",
-      "id": 27
+      "id": 28
+    },
+    {
+      "employeeId": "3",
+      "startDate": "2023-12-22",
+      "endDate": "2023-12-25",
+      "reason": "lj",
+      "leaveType": "vacation",
+      "status": "pending",
+      "id": 29
     }
   ],
   "hrResponses": []

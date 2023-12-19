@@ -3,7 +3,6 @@ import { AuthService } from '../auth.service';
 import { HttpClient } from '@angular/common/http';
 import { EmployeeService } from '../employee.service';
 import { Router } from '@angular/router';
-import {MatSidenavModule} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-employee-dashboard',
@@ -18,8 +17,7 @@ export class EmployeeDashboardComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private employeeService: EmployeeService,
-    private router: Router
-
+    private router:Router
   ) {
     this.loggedInEmployeeId = this.authService.getLoggedInEmployeeId();
   }
@@ -37,10 +35,10 @@ export class EmployeeDashboardComponent implements OnInit {
         });
     }
   }
+
   logout(){
     this.authService.logout();
     this.router.navigate(['/login']);
   }
-
   
 }

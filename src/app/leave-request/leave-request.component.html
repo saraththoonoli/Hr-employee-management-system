@@ -1,4 +1,6 @@
-<!-- leave application form.. -->
+<div>
+  <a class="btn btn-secondary ms-5 me-5 mt-3" (click)="goBack()">Back</a>
+</div>
 <div class="container mt-4">
   <h2 class="mb-4">Apply for Leave</h2>
   <form [formGroup]="leaveForm" (ngSubmit)="applyLeave()">
