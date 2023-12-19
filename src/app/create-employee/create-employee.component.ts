@@ -3,6 +3,7 @@ import { EmployeeService } from '../employee.service';
 import Swal from 'sweetalert2';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-create-employee',
   templateUrl: './create-employee.component.html',
@@ -20,10 +21,16 @@ export class CreateEmployeeComponent {
     bloodGroup: '',
     gender: '',
     leaveDetails: '',
-    designation :''
+    designation: ''
   };
-  constructor(private employeeService: EmployeeService , private location: Location,private router:Router) {}
-  // onsubmit 
+
+  constructor(
+    private employeeService: EmployeeService,
+    private location: Location,
+    private router: Router
+  ) {}
+
+  // onSubmit
   onSubmit(): void {
     this.employeeService.addEmployee(this.employee).subscribe(
       () => {
@@ -33,6 +40,7 @@ export class CreateEmployeeComponent {
           icon: 'success',
         });
         console.log('Employee added successfully.');
+        // Navigate to the employee-details route
         this.router.navigate(['/employee-details']);
       },
       (error) => {
@@ -46,8 +54,7 @@ export class CreateEmployeeComponent {
     );
   }
 
-  // back page navigation
-
+  // goBack page navigation
   goBack(): void {
     this.location.back();
   }
