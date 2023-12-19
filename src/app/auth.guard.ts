@@ -10,15 +10,15 @@ import { AuthService } from './auth.service';
 export class AuthGuard implements CanActivate {
   constructor(private authService: AuthService, private router: Router) {}
 
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+  canActivate(
+    next: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+
     if (this.authService.isLoggedIn()) {
-      // Check if HR user is trying to access HR dashboard
-      if (route.url[0]?.path === 'hr-dashboard' && this.authService.getRole() !== 'hr') {
-        this.router.navigate(['/employee-dashboard']);
-        return false;
-      }
+      // User is authenticated, allow access
       return true;
     } else {
+      // Redirect to login page if not authenticated
       this.router.navigate(['/login']);
       return false;
     }

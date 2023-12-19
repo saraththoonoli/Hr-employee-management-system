@@ -3,6 +3,8 @@ import { EmployeeService } from '../employee.service';
 import Swal from 'sweetalert2';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-create-employee',
@@ -11,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class CreateEmployeeComponent {
 
+  
   employee: any = {
     name: '',
     email: '',
@@ -58,4 +61,6 @@ export class CreateEmployeeComponent {
   goBack(): void {
     this.location.back();
   }
+
+  
 }
