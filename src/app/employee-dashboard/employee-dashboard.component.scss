@@ -66,15 +66,17 @@ h4{
   border: none;
 }
 
-.bg{
-  background-color: red;
-}
 
-/* Adjustments for smaller screens (e.g., mobile devices) */
+
+
+
+
 @media screen and (max-width: 600px) {
   #sidebar {
     width: 100%; /* Make the sidebar full width */
   }
+  #dashboard {
+    width: 100%; 
+  }
 
-  /* Add any additional styling for smaller screens as needed */
 }

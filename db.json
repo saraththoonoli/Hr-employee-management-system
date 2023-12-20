@@ -157,6 +157,21 @@
       "username": "suresh",
       "password": "suresh",
       "id": 14
+    },
+    {
+      "name": "mili",
+      "email": "mili@gmail.com",
+      "phone": 5212369548,
+      "age": 26,
+      "dob": "1997-12-21",
+      "image": "sss",
+      "bloodGroup": "O+ve",
+      "gender": "female",
+      "leaveDetails": "",
+      "designation": "Tester",
+      "username": "Mili",
+      "password": "mili",
+      "id": 15
     }
   ],
   "leaveRequests": [

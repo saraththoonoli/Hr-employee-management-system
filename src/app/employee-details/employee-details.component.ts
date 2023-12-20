@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { LeaveService } from '../leave.service';
 
 @Component({
   selector: 'app-employee-details',
@@ -13,7 +14,7 @@ export class EmployeeDetailsComponent implements OnInit {
   employees: any[] = [];
   location: any;
 
-  constructor(private router: Router, private employeeService: EmployeeService) {}
+  constructor(private router: Router, private employeeService: EmployeeService, private leaveService: LeaveService ) {}
 
   ngOnInit(): void {
     this.loadEmployees();

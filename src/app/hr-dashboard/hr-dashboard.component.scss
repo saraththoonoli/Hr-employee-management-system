@@ -39,3 +39,14 @@
   margin: 0px;
   border: 5px solid #ffff;
 }
+
+
+@media screen and (max-width: 600px) {
+  #sidebar {
+    width: 100%; /* Make the sidebar full width */
+  }
+  #dashboard {
+    width: 100%; /* Make the sidebar full width */
+  }
+
+}

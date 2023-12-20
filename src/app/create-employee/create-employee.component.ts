@@ -5,15 +5,13 @@ import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
-
 @Component({
   selector: 'app-create-employee',
   templateUrl: './create-employee.component.html',
-  styleUrls: ['./create-employee.component.scss']
+  styleUrls: ['./create-employee.component.scss'],
 })
 export class CreateEmployeeComponent {
-
-  
+  // for saving employee details in backend
   employee: any = {
     name: '',
     email: '',
@@ -24,7 +22,7 @@ export class CreateEmployeeComponent {
     bloodGroup: '',
     gender: '',
     leaveDetails: '',
-    designation: ''
+    designation: '',
   };
 
   constructor(
@@ -61,6 +59,4 @@ export class CreateEmployeeComponent {
   goBack(): void {
     this.location.back();
   }
-
-  
 }

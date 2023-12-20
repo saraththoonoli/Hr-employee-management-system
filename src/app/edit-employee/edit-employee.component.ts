@@ -19,16 +19,16 @@ export class EditEmployeeComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private employeeService: EmployeeService,
-    private location: Location  // Make sure Location is injected here
+    private location: Location
   ) {}
-
+  // employee id fetch
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.employeeId = +params['id'];
       this.loadEmployeeDetails();
     });
   }
-
+  // load the employee details
   loadEmployeeDetails(): void {
     this.employeeService.getEmployeeDetails(this.employeeId).subscribe(
       (data) => {
@@ -39,7 +39,7 @@ export class EditEmployeeComponent implements OnInit {
       }
     );
   }
-
+  // update employee details
   updateEmployee(): void {
     this.employeeService
       .updateEmployee(this.employeeId, this.employee)
@@ -59,10 +59,9 @@ export class EditEmployeeComponent implements OnInit {
             icon: 'error',
           });
         }
-      );  
+      );
   }
- 
-
+  // go back logic
   goBack(): void {
     this.location.back();
   }

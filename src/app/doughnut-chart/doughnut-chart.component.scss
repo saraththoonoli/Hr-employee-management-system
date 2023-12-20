@@ -1,10 +1,19 @@
-
-.status{
+.status {
     background-color: rgb(231, 231, 243);
     padding-top: 50px;
-    h1{
+
+    h1 {
         font-family: 600;
         padding-bottom: 15px;
-    
+
     }
+}
+
+@media screen and (max-width: 600px) {
+    .status {
+        width: 100%;
+        /* Make the sidebar full width */
+    }
+
+
 }
