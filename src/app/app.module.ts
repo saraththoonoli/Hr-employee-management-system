@@ -26,6 +26,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 
@@ -49,6 +50,7 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
     FooterComponent,
     WilsCardComponent,
     DoughnutChartComponent,
+    SpinnerComponent,
 
   ],
   imports: [

@@ -43,11 +43,13 @@ export class EmployeeDashboardComponent implements OnInit {
   markOnline(): void {
     this.isOnline = true;
     this.saveOnlineStatus(true);
+    alert('You are online')
   }
 
   markOffline(): void {
     this.isOnline = false;
     this.saveOnlineStatus(false);
+    alert('you are offline')
   }
 
   private saveOnlineStatus(online: boolean): void {

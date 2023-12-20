@@ -30,7 +30,7 @@
       "password": "sarath",
       "id": 3,
       "status": "inactive",
-      "online": false,
+      "online": true,
       "designation": "software engineer"
     },
     {
@@ -73,7 +73,7 @@
       "image": "a",
       "bloodGroup": "A-ve",
       "gender": "male",
-      "leaveDetails": "",
+      "leaveDetails": "2 leave",
       "designation": "software engineer",
       "username": "ravi",
       "password": "ravi1234",
@@ -112,22 +112,6 @@
       "online": false
     },
     {
-      "name": "kripa.t",
-      "email": "kripa@gmail.com",
-      "phone": 5215896324,
-      "age": 38,
-      "dob": "1988-11-12",
-      "image": "ggg",
-      "bloodGroup": "AB+ve",
-      "gender": "female",
-      "leaveDetails": "",
-      "designation": "engineer",
-      "username": "kripa",
-      "password": "kripa",
-      "id": 12,
-      "online": true
-    },
-    {
       "name": "karthi",
       "email": "karthi@gmail.com",
       "phone": 9854523698,
@@ -159,19 +143,20 @@
       "id": 14
     },
     {
-      "name": "mili",
-      "email": "mili@gmail.com",
-      "phone": 5212369548,
-      "age": 26,
-      "dob": "1997-12-21",
-      "image": "sss",
-      "bloodGroup": "O+ve",
-      "gender": "female",
+      "name": "gurunath",
+      "email": "guru@gmail.com",
+      "phone": 8526941567,
+      "age": 29,
+      "dob": "1900-12-12",
+      "image": "jg",
+      "bloodGroup": "AB+ve",
+      "gender": "male",
       "leaveDetails": "",
-      "designation": "Tester",
-      "username": "Mili",
-      "password": "mili",
-      "id": 15
+      "designation": "Developer",
+      "username": "guru",
+      "password": "guru",
+      "id": 16,
+      "online": true
     }
   ],
   "leaveRequests": [
@@ -204,17 +189,6 @@
       "id": 31
     },
     {
-      "employeeId": "12",
-      "startDate": "2023-12-21",
-      "endDate": "2023-12-22",
-      "reason": "hospital case",
-      "leaveType": "personal",
-      "status": "approved",
-      "dates": [],
-      "reasons": "",
-      "id": 32
-    },
-    {
       "employeeId": "3",
       "startDate": "2023-12-21",
       "endDate": "2023-12-25",
@@ -242,15 +216,6 @@
       "leaveType": "sick",
       "status": "rejected",
       "id": 35
-    },
-    {
-      "employeeId": "12",
-      "startDate": "2023-12-25",
-      "endDate": "2023-12-28",
-      "reason": "feaver",
-      "leaveType": "sick",
-      "status": "pending",
-      "id": 36
     }
   ],
   "hrResponses": []

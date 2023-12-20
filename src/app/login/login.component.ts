@@ -1,8 +1,9 @@
-
-import { Component } from '@angular/core';
+// login.component.ts
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
-import Swal from 'sweetalert2'; // Import SweetAlert2
+import { SpinnerService } from '../spinner.service'; // Import the SpinnerService
+import Swal from 'sweetalert2';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -10,14 +11,18 @@ import { Observable } from 'rxjs';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
   username: string = '';
   password: string = '';
+  loading: boolean = false; // Add loading property
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router, private spinnerService: SpinnerService) {}
+
+  ngOnInit(): void {}
 
   login(): void {
+    this.spinnerService.show(); // Show spinner
     this.authService.login(this.username, this.password).subscribe(
       success => {
         if (success) {
@@ -55,6 +60,9 @@ export class LoginComponent {
           title: 'Error',
           text: 'An error occurred during login. Please try again later.'
         });
+      },
+      () => {
+        this.spinnerService.hide(); // Hide spinner on completion (success or error)
       }
     );
   }
