@@ -20,4 +20,6 @@ export class OnlineStatusService {
     const url = `${this.apiUrl}/${employeeId}`;
     return this.http.get(url);
   }
+  
+  
 }

@@ -6,6 +6,8 @@ import { PieArcDatum } from 'd3-shape'; // Add this import
 @Component({
   selector: 'app-doughnut-chart',
   templateUrl: './doughnut-chart.component.html',
+  styleUrls: ['./doughnut-chart.component.scss']
+
 })
 export class DoughnutChartComponent implements OnInit {
   private employeeData: any[] = [];
@@ -39,7 +41,7 @@ export class DoughnutChartComponent implements OnInit {
         .select('svg');
       svg.selectAll('*').remove(); // Clear existing chart (if any)
   
-      const width = 1100;
+      const width = 1250;
       const height = 650;
       const radius = Math.min(width, height) / 2;
   
@@ -65,8 +67,8 @@ export class DoughnutChartComponent implements OnInit {
         .append('path')
         .attr('d', arc)
         .attr('fill', d => (d.data.online ? color('Online') : color('Offline')))
-        .attr('stroke', '#fff')
-        .attr('stroke-width', 2);
+        .attr('stroke', '#000')
+        .attr('stroke-width', 4);
   
       // Display employee names and online status as text labels
       const textLabels = chartGroup.selectAll('text')

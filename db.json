@@ -46,7 +46,7 @@
       "username": "shamal",
       "password": "shamal",
       "id": 4,
-      "online": false
+      "online": true
     },
     {
       "name": "akash.p",
@@ -61,7 +61,8 @@
       "designation": "Backend ",
       "username": "akash",
       "password": "akash",
-      "id": 5
+      "id": 5,
+      "online": false
     },
     {
       "name": "ravi.ps",
@@ -91,7 +92,8 @@
       "designation": "engineer",
       "username": "subash",
       "password": "subash1234",
-      "id": 7
+      "id": 7,
+      "online": true
     },
     {
       "name": "swathi",
@@ -106,7 +108,8 @@
       "designation": "Data engineer",
       "username": "swathi",
       "password": "swathi2525",
-      "id": 8
+      "id": 8,
+      "online": false
     },
     {
       "name": "kripa.t",
@@ -121,7 +124,8 @@
       "designation": "engineer",
       "username": "kripa",
       "password": "kripa",
-      "id": 12
+      "id": 12,
+      "online": true
     },
     {
       "name": "karthi",
@@ -136,7 +140,8 @@
       "designation": "Sales",
       "username": "karthika",
       "password": "karthika",
-      "id": 13
+      "id": 13,
+      "online": false
     },
     {
       "name": "suresh",
@@ -222,6 +227,15 @@
       "leaveType": "sick",
       "status": "rejected",
       "id": 35
+    },
+    {
+      "employeeId": "12",
+      "startDate": "2023-12-25",
+      "endDate": "2023-12-28",
+      "reason": "feaver",
+      "leaveType": "sick",
+      "status": "pending",
+      "id": 36
     }
   ],
   "hrResponses": []
