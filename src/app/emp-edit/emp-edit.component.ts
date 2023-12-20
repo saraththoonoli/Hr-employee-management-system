@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-emp-edit',
   templateUrl: './emp-edit.component.html',
-  styleUrls: ['./emp-edit.component.scss']
+  styleUrls: ['./emp-edit.component.scss'],
 })
 export class EmpEditComponent {
   employeeId: any;
@@ -38,29 +38,31 @@ export class EmpEditComponent {
 
   updateEmployee(): void {
     if (this.employeeId) {
-      this.employeeService.updateEmployee(this.employeeId, this.employee).subscribe(
-        () => {
-          Swal.fire({
-            icon: 'success',
-            title: 'Success',
-            text: 'Employee details updated successfully.',
-          }).then(() => {
-            // Navigate back to employee details page
-            this.router.navigate(['/emp-details']);
+      this.employeeService
+        .updateEmployee(this.employeeId, this.employee)
+        .subscribe(
+          () => {
+            Swal.fire({
+              icon: 'success',
+              title: 'Success',
+              text: 'Employee details updated successfully.',
+            }).then(() => {
+              // Navigate back to employee details page
+              this.router.navigate(['/emp-details']);
 
-            // reloading the component or fetching fresh data
-            this.loadEmployeeDetails();
-          });
-        },
-        (error) => {
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Error updating employee details. Please try again.',
-          });
-          console.error('Error updating employee details:', error);
-        }
-      );
+              // reloading the component or fetching fresh data
+              this.loadEmployeeDetails();
+            });
+          },
+          (error) => {
+            Swal.fire({
+              icon: 'error',
+              title: 'Error',
+              text: 'Error updating employee details. Please try again.',
+            });
+            console.error('Error updating employee details:', error);
+          }
+        );
     }
   }
   goBack(): void {
