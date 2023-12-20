@@ -81,5 +81,8 @@ export class LeaveRequestComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['/employee-dashboard']); // Adjust the route accordingly
   }
+
+  isStatusAvailable(leaveRequest: any): boolean {
+    return leaveRequest.status === 'approved' || leaveRequest.status === 'rejected';
+  }
 }
-  

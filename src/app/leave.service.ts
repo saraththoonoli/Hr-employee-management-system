@@ -14,7 +14,7 @@ export class LeaveService {
 
   applyLeave(employeeId: number, leaveDetails: any): Observable<any> {
     const url = `${this.apiUrl}`;
-    const leaveRequest = { employeeId, ...leaveDetails, status: 'pending' };
+    const leaveRequest = { employeeId, ...leaveDetails, status: 'pending', dates: [], reasons: '' };
     return this.http.post(url, leaveRequest);
   }
 

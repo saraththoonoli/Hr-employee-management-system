@@ -8,10 +8,8 @@ import { Observable } from 'rxjs';
 export class HrLeaveService {
 
   private apiUrl = 'http://localhost:3000/leaveRequests';
-  private leaveDetailsUrl = 'http://localhost:3000/leaveDetails';
 
   constructor(private http: HttpClient) {}
-
   getPendingLeaveRequests(): Observable<any[]> {
     const url = `${this.apiUrl}?status=pending`;
     return this.http.get<any[]>(url);
@@ -19,12 +17,12 @@ export class HrLeaveService {
 
   approveLeave(leaveRequestId: number): Observable<any> {
     const url = `${this.apiUrl}/${leaveRequestId}`;
-    return this.http.put(url, { status: 'approved' });
+    return this.http.patch(url, { status: 'approved' });
   }
 
   rejectLeave(leaveRequestId: number): Observable<any> {
     const url = `${this.apiUrl}/${leaveRequestId}`;
-    return this.http.put(url, { status: 'rejected' });
+    return this.http.patch(url, { status: 'rejected' });
   }
 
   

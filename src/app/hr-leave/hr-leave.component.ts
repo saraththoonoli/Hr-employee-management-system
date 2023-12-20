@@ -50,7 +50,7 @@ export class HrLeaveComponent {
   private showErrorAlert(message: string): void {
     Swal.fire({
       icon: 'error',
-      title: 'Error!',
+      title: 'Rejected!',
       text: message,
     });
   }
