@@ -1,5 +1,3 @@
-
-
 import { Component, Input, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { EmployeeService } from '../employee.service';
@@ -9,13 +7,13 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-employee-dashboard',
   templateUrl: './employee-dashboard.component.html',
-  styleUrls: ['./employee-dashboard.component.scss']
+  styleUrls: ['./employee-dashboard.component.scss'],
 })
 export class EmployeeDashboardComponent implements OnInit {
   loggedInEmployeeId: string | null;
   loggedInEmployee: any;
-  isOnline: boolean = true; 
-  @Input() bg:string=''
+  isOnline: boolean = true;
+  @Input() bg: string = '';
 
   constructor(
     private authService: AuthService,
@@ -43,13 +41,13 @@ export class EmployeeDashboardComponent implements OnInit {
   markOnline(): void {
     this.isOnline = true;
     this.saveOnlineStatus(true);
-    alert('You are online')
+    alert('You are online');
   }
 
   markOffline(): void {
     this.isOnline = false;
     this.saveOnlineStatus(false);
-    alert('you are offline')
+    alert('you are offline');
   }
 
   private saveOnlineStatus(online: boolean): void {

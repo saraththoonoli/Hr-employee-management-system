@@ -60,6 +60,6 @@ export class EmployeeDetailsComponent implements OnInit {
 
   // Back function
   goBack(): void {
-    this.router.navigate(['/hr-dashboard']); // Adjust the route accordingly
+    this.router.navigate(['/hr-dashboard']);
   }
 }

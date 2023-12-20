@@ -216,6 +216,15 @@
       "leaveType": "sick",
       "status": "rejected",
       "id": 35
+    },
+    {
+      "employeeId": "16",
+      "startDate": "2023-12-12",
+      "endDate": "2023-12-14",
+      "reason": "personal reasons",
+      "leaveType": "personal",
+      "status": "approved",
+      "id": 36
     }
   ],
   "hrResponses": []

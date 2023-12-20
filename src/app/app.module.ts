@@ -15,7 +15,6 @@ import { DonutChartComponent } from './donut-chart/donut-chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { EmpDetailsComponent } from './emp-details/emp-details.component';
-import { LeaveApplicationComponent } from './leave-application/leave-application.component';
 import { LeaveRequestComponent } from './leave-request/leave-request.component';
 import { EmpEditComponent } from './emp-edit/emp-edit.component';
 import { HrLeaveComponent } from './hr-leave/hr-leave.component';
@@ -27,6 +26,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { LeaveApplicationComponent } from './leave-application/leave-application.component';
 
 
 
@@ -43,7 +43,6 @@ import { SpinnerComponent } from './spinner/spinner.component';
     DonutChartComponent,
     EditEmployeeComponent,
     EmpDetailsComponent,
-    LeaveApplicationComponent,
     LeaveRequestComponent,
     EmpEditComponent,
     HrLeaveComponent,
@@ -51,6 +50,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     WilsCardComponent,
     DoughnutChartComponent,
     SpinnerComponent,
+    LeaveApplicationComponent
 
   ],
   imports: [
