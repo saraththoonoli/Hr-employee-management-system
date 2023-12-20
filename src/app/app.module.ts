@@ -23,9 +23,9 @@ import { FooterComponent } from './footer/footer.component';
 import { WilsCardComponent } from './wils-card/wils-card.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
-import { BarChartComponent } from './bar-chart/bar-chart.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 
 
 
@@ -48,7 +48,8 @@ import {MatIconModule} from '@angular/material/icon';
     HrLeaveComponent,
     FooterComponent,
     WilsCardComponent,
-    BarChartComponent
+    DoughnutChartComponent,
+
   ],
   imports: [
     BrowserModule,

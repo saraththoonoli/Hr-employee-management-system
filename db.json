@@ -137,117 +137,24 @@
       "username": "karthika",
       "password": "karthika",
       "id": 13
+    },
+    {
+      "name": "suresh",
+      "email": "sura@gmail.com",
+      "phone": 9532156976,
+      "age": 36,
+      "dob": "1980-12-12",
+      "image": "fff",
+      "bloodGroup": "",
+      "gender": "male",
+      "leaveDetails": "",
+      "designation": "Designer",
+      "username": "suresh",
+      "password": "suresh",
+      "id": 14
     }
   ],
   "leaveRequests": [
-    {
-      "status": "approved",
-      "id": 1
-    },
-    {
-      "status": "approved",
-      "id": 2
-    },
-    {
-      "status": "approved",
-      "id": 3
-    },
-    {
-      "status": "approved",
-      "id": 4
-    },
-    {
-      "status": "rejected",
-      "id": 5
-    },
-    {
-      "status": "rejected",
-      "id": 6
-    },
-    {
-      "status": "approved",
-      "id": 7
-    },
-    {
-      "status": "approved",
-      "id": 8
-    },
-    {
-      "status": "rejected",
-      "id": 9
-    },
-    {
-      "status": "approved",
-      "id": 10
-    },
-    {
-      "status": "rejected",
-      "id": 11
-    },
-    {
-      "status": "rejected",
-      "id": 12
-    },
-    {
-      "status": "approved",
-      "id": 13
-    },
-    {
-      "status": "approved",
-      "id": 14
-    },
-    {
-      "status": "approved",
-      "id": 15
-    },
-    {
-      "status": "approved",
-      "id": 16
-    },
-    {
-      "status": "approved",
-      "id": 17
-    },
-    {
-      "status": "approved",
-      "id": 18
-    },
-    {
-      "status": "rejected",
-      "id": 19
-    },
-    {
-      "status": "approved",
-      "id": 20
-    },
-    {
-      "status": "approved",
-      "id": 21
-    },
-    {
-      "status": "approved",
-      "id": 22
-    },
-    {
-      "status": "approved",
-      "id": 23
-    },
-    {
-      "status": "approved",
-      "id": 24
-    },
-    {
-      "status": "rejected",
-      "id": 25
-    },
-    {
-      "status": "rejected",
-      "id": 26
-    },
-    {
-      "status": "rejected",
-      "id": 27
-    },
     {
       "employeeId": "3",
       "startDate": "2023-12-22",
@@ -297,6 +204,24 @@
       "dates": [],
       "reasons": "",
       "id": 33
+    },
+    {
+      "employeeId": "3",
+      "startDate": "2023-12-25",
+      "endDate": "2023-12-28",
+      "reason": "khbsj",
+      "leaveType": "vacation",
+      "status": "approved",
+      "id": 34
+    },
+    {
+      "employeeId": "4",
+      "startDate": "2023-12-21",
+      "endDate": "2023-12-22",
+      "reason": "feaver",
+      "leaveType": "sick",
+      "status": "rejected",
+      "id": 35
     }
   ],
   "hrResponses": []
