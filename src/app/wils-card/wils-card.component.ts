@@ -10,6 +10,6 @@ export class WilsCardComponent {
 constructor(private router:Router){}
     // Back function
     goBack(): void {
-      this.router.navigate(['/login']); // Adjust the route accordingly
+      this.router.navigate(['/login']);
     }
 }

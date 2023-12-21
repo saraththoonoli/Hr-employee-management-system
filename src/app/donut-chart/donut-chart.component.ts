@@ -36,7 +36,7 @@ export class DonutChartComponent {
         .attr('y', (d: number) => 200 - d)
         .attr('width', 70)
         .attr('height', (d: number) => d)
-        .attr('fill', '#4CAF50');
+        .attr('fill', '#000');
     });
   }
 }

@@ -13,7 +13,7 @@
       "bloodGroup": "O+",
       "gender": "male",
       "leaveDetails": "5 leave taken",
-      "online": false,
+      "online": true,
       "designation": "Backend "
     },
     {
@@ -65,37 +65,6 @@
       "online": false
     },
     {
-      "name": "ravi.ps",
-      "email": "ravi@gmail.com",
-      "phone": 2546987435,
-      "age": 27,
-      "dob": "2003-12-12",
-      "image": "a",
-      "bloodGroup": "A-ve",
-      "gender": "male",
-      "leaveDetails": "2 leave",
-      "designation": "software engineer",
-      "username": "ravi",
-      "password": "ravi1234",
-      "id": 6
-    },
-    {
-      "name": "subash",
-      "email": "suab@gmail.com",
-      "phone": 2549783514,
-      "age": 35,
-      "dob": "1990-12-21",
-      "image": "ss",
-      "bloodGroup": "B+ve",
-      "gender": "male",
-      "leaveDetails": "",
-      "designation": "engineer",
-      "username": "subash",
-      "password": "subash1234",
-      "id": 7,
-      "online": true
-    },
-    {
       "name": "swathi",
       "email": "swathi@gmail.com",
       "phone": 8526497563,
@@ -125,7 +94,7 @@
       "username": "karthika",
       "password": "karthika",
       "id": 13,
-      "online": false
+      "online": true
     },
     {
       "name": "suresh",
@@ -156,7 +125,7 @@
       "username": "guru",
       "password": "guru",
       "id": 16,
-      "online": true
+      "online": false
     }
   ],
   "leaveRequests": [

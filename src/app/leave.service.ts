@@ -39,4 +39,9 @@ export class LeaveService {
     const url = `${this.apiUrl}/${employeeId}`;
     return this.http.patch(url, employee);
   }
+  
+// for leave bar chart
+  getEmployeeLeaveCount(employeeId: number): Observable<number> {
+    return this.http.get<number>(`${this.apiUrl}/employees/${employeeId}/leave-count`);
+  }
 }

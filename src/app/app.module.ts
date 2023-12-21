@@ -20,16 +20,13 @@ import { EmpEditComponent } from './emp-edit/emp-edit.component';
 import { HrLeaveComponent } from './hr-leave/hr-leave.component';
 import { FooterComponent } from './footer/footer.component';
 import { WilsCardComponent } from './wils-card/wils-card.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { LeaveApplicationComponent } from './leave-application/leave-application.component';
-
-
-
 
 @NgModule({
   declarations: [
@@ -50,8 +47,7 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
     WilsCardComponent,
     DoughnutChartComponent,
     SpinnerComponent,
-    LeaveApplicationComponent
-
+    LeaveApplicationComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,11 +59,9 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
     MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
-    
-    
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
