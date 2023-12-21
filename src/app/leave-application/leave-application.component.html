@@ -1,10 +1,15 @@
-
 <!-- this is not leave application this is for leave details -->
-<a class="btn  ms-3 me-3 mt-1 " (click)="goBack()"><i class="fa-solid fa-2xl fa-circle-left" style="color: #000000;"></i></a>
+<a class="btn ms-3 me-3 mt-1" (click)="goBack()"
+  ><i class="fa-solid fa-2xl fa-circle-left" style="color: #000000"></i
+></a>
 <!--  for leave details -->
-<h3 class="mt-4">Employee leave info <i class="fa-sharp fa-solid fa-circle-info" style="color: #145ddb;"></i></h3>
+<h3 class="mt-4">
+  Employee leave info
+  <i class="fa-sharp fa-solid fa-circle-info" style="color: #145ddb"></i>
+</h3>
 <div class="ms-5 me-5" *ngFor="let employee of employees">
-  <h5>{{ employee.name }}</h5><span> ID: {{employee.id}} </span>
+  <h5>{{ employee.name }}</h5>
+  <span> ID: {{ employee.id }} </span>
   <div class="table-responsive">
     <table class="table table-bordered mt-2">
       <thead>
@@ -28,6 +33,3 @@
     </table>
   </div>
 </div>
-
-
-

@@ -4,8 +4,8 @@
 
 #sidebar {
   width: 250px;
-  background-color:rgb(137, 137, 137);
-  color: #fff;  
+  background-color: rgb(137, 137, 137);
+  color: #fff;
   padding: 20px;
   height: 100vh;
 }
@@ -15,7 +15,6 @@
   padding: 20px;
 }
 
-/* Style the menu links */
 #sidebar a {
   display: block;
   color: #fff;
@@ -24,11 +23,13 @@
   margin-bottom: 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  p{
+
+  p {
     text-align: center;
   }
 }
-#designation{
+
+#designation {
   color: white;
   font-size: 15px;
   font-weight: 400;
@@ -38,15 +39,18 @@
 #sidebar a:hover {
   background-color: #555;
 }
-span{
+
+span {
   color: rgb(138, 138, 228);
   font-size: 35px;
   font-weight: 600;
 }
-img{
+
+img {
   border-radius: 100%;
 }
-h4{
+
+h4 {
   font-size: 24px;
   color: #fff;
   font-weight: 400;
@@ -60,13 +64,17 @@ h4{
 }
 
 .active {
-  background-color: green; /* or any color you prefer */
+  background-color: green;
+  /* or any color you prefer */
   color: white;
 }
-.button-1,.button-2{
+
+.button-1,
+.button-2 {
   border: none;
 }
-h1{
+
+h1 {
   color: red;
 }
 
@@ -76,10 +84,12 @@ h1{
 
 @media screen and (max-width: 600px) {
   #sidebar {
-    width: 100%; /* Make the sidebar full width */
+    width: 100%;
+    /* Make the sidebar full width */
   }
+
   #dashboard {
-    width: 100%; 
+    width: 100%;
   }
 
 }

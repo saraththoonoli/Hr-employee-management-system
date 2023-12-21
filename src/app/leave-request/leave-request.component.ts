@@ -1,4 +1,3 @@
-// leave-request.component.ts
 
 import { Component, OnInit } from '@angular/core';
 import { LeaveService } from '../leave.service';
@@ -9,10 +8,9 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-leave-request',
   templateUrl: './leave-request.component.html',
-  styleUrls: ['./leave-request.component.scss']
+  styleUrls: ['./leave-request.component.scss'],
 })
 export class LeaveRequestComponent implements OnInit {
-  
   leaveForm: FormGroup;
   employeeId: any; // This will be set based on the logged-in employee
   leaveRequests: any[] = [];
@@ -21,7 +19,7 @@ export class LeaveRequestComponent implements OnInit {
     private leaveService: LeaveService,
     private authService: AuthService,
     private fb: FormBuilder,
-    private router:Router
+    private router: Router
   ) {
     this.leaveForm = this.fb.group({
       startDate: ['', Validators.required],
@@ -49,9 +47,9 @@ export class LeaveRequestComponent implements OnInit {
           this.loadLeaveRequests();
           this.leaveForm.reset();
         },
-        error => {
+        (error) => {
           console.error('Error applying leave:', error);
-          // Handle error (e.g., show an alert to the user)
+          // Handle error 
         }
       );
     }
@@ -59,11 +57,13 @@ export class LeaveRequestComponent implements OnInit {
 
   loadLeaveRequests(leaveRequestId?: number) {
     this.leaveService.getEmployeeLeaveRequests(this.employeeId).subscribe(
-      leaveRequests => {
+      (leaveRequests) => {
         if (leaveRequestId !== undefined) {
-          // Find the leave request with the specified ID
-          const selectedRequest = leaveRequests.find(request => request.id === leaveRequestId);
-  
+          // Find the leave request with the  ID
+          const selectedRequest = leaveRequests.find(
+            (request) => request.id === leaveRequestId
+          );
+
           // Display feedback status only for the selected leave request
           this.leaveRequests = selectedRequest ? [selectedRequest] : [];
         } else {
@@ -71,9 +71,9 @@ export class LeaveRequestComponent implements OnInit {
           this.leaveRequests = leaveRequests;
         }
       },
-      error => {
+      (error) => {
         console.error('Error fetching leave requests:', error);
-        // Handle error (e.g., show an alert to the user)
+        // Handle error 
       }
     );
   }
@@ -83,6 +83,8 @@ export class LeaveRequestComponent implements OnInit {
   }
 
   isStatusAvailable(leaveRequest: any): boolean {
-    return leaveRequest.status === 'approved' || leaveRequest.status === 'rejected';
+    return (
+      leaveRequest.status === 'approved' || leaveRequest.status === 'rejected'
+    );
   }
 }

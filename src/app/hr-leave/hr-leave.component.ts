@@ -5,18 +5,18 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-hr-leave',
   templateUrl: './hr-leave.component.html',
-  styleUrls: ['./hr-leave.component.scss']
+  styleUrls: ['./hr-leave.component.scss'],
 })
 export class HrLeaveComponent {
   pendingLeaveRequests: any[] = [];
 
   constructor(private hrLeaveService: HrLeaveService) {
-    // Fetch pending leave requests when the component initializes
+    // Fetch pending leave requests when the component 
     this.fetchPendingLeaveRequests();
   }
 
   fetchPendingLeaveRequests(): void {
-    this.hrLeaveService.getPendingLeaveRequests().subscribe(requests => {
+    this.hrLeaveService.getPendingLeaveRequests().subscribe((requests) => {
       this.pendingLeaveRequests = requests;
     });
   }

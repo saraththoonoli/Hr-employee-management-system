@@ -3,17 +3,20 @@ import { Router } from '@angular/router';
 import { EmployeeService } from '../employee.service';
 import { LeaveService } from '../leave.service';
 
-
 @Component({
   selector: 'app-leave-application',
   templateUrl: './leave-application.component.html',
-  styleUrls: ['./leave-application.component.scss']
+  styleUrls: ['./leave-application.component.scss'],
 })
-export class LeaveApplicationComponent{
+export class LeaveApplicationComponent {
   employees: any[] = [];
   location: any;
 
-  constructor(private router: Router, private employeeService: EmployeeService, private leaveService: LeaveService ) {}
+  constructor(
+    private router: Router,
+    private employeeService: EmployeeService,
+    private leaveService: LeaveService
+  ) {}
 
   ngOnInit(): void {
     this.loadEmployees();
@@ -25,13 +28,16 @@ export class LeaveApplicationComponent{
         this.employees = data;
 
         // Fetch and attach leave details for each employee
-        this.employees.forEach(employee => {
+        this.employees.forEach((employee) => {
           this.leaveService.getEmployeeLeaveRequests(employee.id).subscribe(
             (leaveDetails) => {
               employee.leaveDetails = leaveDetails;
             },
             (error) => {
-              console.error(`Error fetching leave details for employee ${employee.id}:`, error);
+              console.error(
+                `Error fetching leave details for employee ${employee.id}:`,
+                error
+              );
             }
           );
         });
@@ -41,8 +47,8 @@ export class LeaveApplicationComponent{
       }
     );
   }
-    // Back function
-    goBack(): void {
-      this.router.navigate(['/hr-dashboard']); // Adjust the route accordingly
-    }
+  // Back function
+  goBack(): void {
+    this.router.navigate(['/hr-dashboard']); // Adjust the route accordingly
+  }
 }

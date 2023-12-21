@@ -5,17 +5,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-emp-details',
   templateUrl: './emp-details.component.html',
-  styleUrls: ['./emp-details.component.scss']
+  styleUrls: ['./emp-details.component.scss'],
 })
 export class EmpDetailsComponent implements OnInit {
-
   loggedInEmployeeId: string | null;
   loggedInEmployee: any;
 
   constructor(
     private authService: AuthService,
     private employeeService: EmployeeService,
-    private router: Router 
+    private router: Router
   ) {
     this.loggedInEmployeeId = this.authService.getLoggedInEmployeeId();
   }
@@ -23,7 +22,7 @@ export class EmpDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.loadLoggedInEmployeeDetails();
   }
-
+// load emp details 
   loadLoggedInEmployeeDetails(): void {
     if (this.loggedInEmployeeId) {
       this.employeeService
@@ -38,5 +37,4 @@ export class EmpDetailsComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['/employee-dashboard']); // Adjust the route accordingly
   }
-
 }

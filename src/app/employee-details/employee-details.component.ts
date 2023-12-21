@@ -7,14 +7,17 @@ import { LeaveService } from '../leave.service';
 @Component({
   selector: 'app-employee-details',
   templateUrl: './employee-details.component.html',
-  styleUrls: ['./employee-details.component.scss']
+  styleUrls: ['./employee-details.component.scss'],
 })
 export class EmployeeDetailsComponent implements OnInit {
-
   employees: any[] = [];
   location: any;
 
-  constructor(private router: Router, private employeeService: EmployeeService, private leaveService: LeaveService ) {}
+  constructor(
+    private router: Router,
+    private employeeService: EmployeeService,
+    private leaveService: LeaveService
+  ) {}
 
   ngOnInit(): void {
     this.loadEmployees();
@@ -42,7 +45,7 @@ export class EmployeeDetailsComponent implements OnInit {
           Swal.fire({
             title: 'Success!',
             text: 'Employee deleted successfully.',
-            icon: 'success'
+            icon: 'success',
           });
           this.employeeService.notifyRefreshList(); // Notify to refresh the employee list
         },
@@ -50,7 +53,7 @@ export class EmployeeDetailsComponent implements OnInit {
           Swal.fire({
             title: 'Error!',
             text: 'An error occurred while deleting the employee.',
-            icon: 'error'
+            icon: 'error',
           });
           console.error('Error deleting employee:', error);
         }

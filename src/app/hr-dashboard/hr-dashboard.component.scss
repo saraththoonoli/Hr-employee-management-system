@@ -25,7 +25,7 @@
   margin-bottom: 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  
+
 }
 
 
@@ -43,10 +43,12 @@
 
 @media screen and (max-width: 600px) {
   #sidebar {
-    width: 100%; /* Make the sidebar full width */
+    width: 100%;
+   
   }
+
   #dashboard {
-    width: 100%; /* Make the sidebar full width */
+    width: 100%;
   }
 
 }
