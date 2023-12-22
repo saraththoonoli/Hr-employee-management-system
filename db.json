@@ -109,7 +109,8 @@
       "designation": "Designer",
       "username": "suresh",
       "password": "suresh",
-      "id": 14
+      "id": 14,
+      "online": true
     },
     {
       "name": "gurunath",
@@ -194,6 +195,15 @@
       "leaveType": "personal",
       "status": "approved",
       "id": 36
+    },
+    {
+      "employeeId": "3",
+      "startDate": "2023-12-22",
+      "endDate": "2023-12-24",
+      "reason": "Travel to ootty",
+      "leaveType": "vacation",
+      "status": "pending",
+      "id": 37
     }
   ],
   "hrResponses": []

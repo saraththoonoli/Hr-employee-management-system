@@ -9,7 +9,7 @@ import * as d3 from 'd3';
   styleUrls: ['./donut-chart.component.scss']
 })
 export class DonutChartComponent {
-  private chartData = [10, 40, 30, 20, 50];
+  private chartData = [10, 40, 100, 20, 50,20];
   
 
   constructor(private elementRef: ElementRef, private zone: NgZone) {}

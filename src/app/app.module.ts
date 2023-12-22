@@ -26,6 +26,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { LeaveApplicationComponent } from './leave-application/leave-application.component';
+import { LeaveBarChartComponent } from './leave-bar-chart/leave-bar-chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
+
 
 @NgModule({
   declarations: [
@@ -47,6 +51,7 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
     DoughnutChartComponent,
     SpinnerComponent,
     LeaveApplicationComponent,
+    LeaveBarChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,8 +64,14 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    NgxChartsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+
+
+

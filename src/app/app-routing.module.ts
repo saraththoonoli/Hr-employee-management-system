@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'create-employee', component: CreateEmployeeComponent, },
   { path: 'edit/:id', component: EditEmployeeComponent,  },
   { path: 'emp-details', component: EmpDetailsComponent,  },
-  { path: 'leave-application', component: LeaveApplicationComponent,  },
+  { path: 'leave-details', component: LeaveApplicationComponent,  },
   { path: 'leave-req', component: LeaveRequestComponent,  },
   { path: 'edit-employee/:id', component: EmpEditComponent,  },
   {path:'**',component:WilsCardComponent}
